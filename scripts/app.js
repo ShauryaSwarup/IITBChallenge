@@ -96,7 +96,7 @@ class ChemicalSuppliesApp {
         (_j = document
             .getElementById("saveAdd")) === null || _j === void 0 ? void 0 : _j.addEventListener("click", () => this.saveAdd());
         (_k = document
-            .getElementById("cancelEdit")) === null || _k === void 0 ? void 0 : _k.addEventListener("click", () => this.closeAddOverlay());
+            .getElementById("cancelAdd")) === null || _k === void 0 ? void 0 : _k.addEventListener("click", () => this.closeAddOverlay());
     }
     renderTable() {
         console.log("Rendering table with", this.chemicals.length, "chemicals");
@@ -121,7 +121,7 @@ class ChemicalSuppliesApp {
     <td>${chemical.unit}</td>
     <td>${chemical.quantity}</td>
     `;
-                row.addEventListener("click", () => this.openEditOverlay(chemical));
+                row.addEventListener("dblclick", () => this.openEditOverlay(chemical));
             });
         }
         else {

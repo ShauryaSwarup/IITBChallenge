@@ -122,7 +122,7 @@ class ChemicalSuppliesApp {
       .getElementById("saveAdd")
       ?.addEventListener("click", () => this.saveAdd());
     document
-      .getElementById("cancelEdit")
+      .getElementById("cancelAdd")
       ?.addEventListener("click", () => this.closeAddOverlay());
   }
 
@@ -149,7 +149,7 @@ class ChemicalSuppliesApp {
     <td>${chemical.unit}</td>
     <td>${chemical.quantity}</td>
     `;
-        row.addEventListener("click", () => this.openEditOverlay(chemical));
+        row.addEventListener("dblclick", () => this.openEditOverlay(chemical));
       });
     } else {
       console.error("Table body not found");
