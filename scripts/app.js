@@ -36,7 +36,7 @@ class ChemicalSuppliesApp {
     loadData() {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                const response = yield fetch("../data/data.json");
+                const response = yield fetch("/data/data.json");
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
