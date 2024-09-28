@@ -43,7 +43,9 @@ class ChemicalSuppliesApp {
 
   private async loadData(): Promise<void> {
     try {
-      const response = await fetch("/IITBChallenge/data/data.json");
+      const response = await fetch(
+        "https://shauryaswarup.github.io/IITBChallenge/data/data.json",
+      );
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }

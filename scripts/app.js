@@ -36,7 +36,7 @@ class ChemicalSuppliesApp {
     loadData() {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                const response = yield fetch("/IITBChallenge/data/data.json");
+                const response = yield fetch("https://shauryaswarup.github.io/IITBChallenge/data/data.json");
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
