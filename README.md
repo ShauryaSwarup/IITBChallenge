@@ -22,7 +22,7 @@ This web application provides a user-friendly interface for managing a list of c
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/ShauryaSwarup/IITBChallenge
    ```
 2. Open the index.html file in your web browser.
 
@@ -42,6 +42,14 @@ Using TypeScript instead of plain JavaScript offers significant benefits, partic
 The `ChemicalSuppliesApp` class effectively demonstrates several core Object-Oriented Programming (OOP) principles. Encapsulation is utilized by keeping properties like `chemicals`, `table`, and overlays private, preventing direct access from outside the class and ensuring control over the application's state. This design promotes abstraction, allowing complex operations to be hidden behind simple method interfaces like `loadData`, `renderTable`, and `saveEdit`. The modular structure of the class enhances readability and maintainability since changes to one method do not directly affect others. By organizing functionality within a class, the code is not only reusable but can also be extended in the future, promoting efficient development practices. While inheritance is not explicitly used in this example, it could be leveraged for creating related classes, thereby enhancing code reuse and reducing duplication.
 
 ## Screenshots
+#### Table Interface with toolbar
+![Table UI](https://github.com/user-attachments/assets/43862a10-ac25-4737-b260-f9e8c47cbc1e)
+#### Edit Chemical Overlay (double click on row)
+![Edit Chemical Overlay](https://github.com/user-attachments/assets/43fd1f18-789c-4ec4-8518-64bb7c3464d0)
+#### Add Chemical Overlay
+![Add Chemical Overlay](https://github.com/user-attachments/assets/776af89e-7abc-40cf-a6ad-57e35393af1f)
+#### Sorting on Quantity (click column header)
+![Sorting on Quantity](https://github.com/user-attachments/assets/e0799eb7-9a4f-4027-89b9-be537045cddd)
 
 ## Notes
 
