@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chemical Supplies</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="header">
+        <h1>Chemical supplies</h1>
+        <div class="toolbar">
+          <button id="addRow">➕ Add row</button>
+          <button id="moveDown">⬇️ Move down</button>
+          <button id="moveUp">⬆️ Move up</button>
+          <button id="deleteRow">🗑️ Delete</button>
+          <button id="refresh">🔄 Refresh</button>
+          <button id="save">💾 Save</button>
+        </div>
+      </div>
+      <table id="chemicalTable">
+        <thead>
+          <tr>
+            <th id="selectAll">
+              <label>
+                <input type="checkbox" data-id="${chemical.id}" />
+                <span class="tickmark"></span>
+              </label>
+            </th>
+            <th>Chemical name ↑↓</th>
+            <th>Vendor ↑↓</th>
+            <th>Density (g/m³) ↑↓</th>
+            <th>Viscosity (m²/s) ↑↓</th>
+            <th>Packaging ↑↓</th>
+            <th>Pack size ↑↓</th>
+            <th>Unit ↑↓</th>
+            <th>Quantity ↑↓</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Table rows will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+    <div id="addOverlay" class="overlay">
+      <div class="overlay-content">
+        <h2>Add Chemical</h2>
+        <form id="addForm">
+          <!-- Form fields will be dynamically added here -->
+        </form>
+        <button id="saveAdd">Save</button>
+        <button id="cancelAdd">Cancel</button>
+      </div>
+    </div>
+    <div id="editOverlay" class="overlay">
+      <div class="overlay-content">
+        <h2>Edit Chemical</h2>
+        <form id="editForm">
+          <!-- Form fields will be dynamically added here -->
+        </form>
+        <button id="saveEdit">Save</button>
+        <button id="cancelEdit">Cancel</button>
+      </div>
+    </div>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
